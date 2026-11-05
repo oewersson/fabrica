@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Conectando…</title>
+<style>body{font-family:system-ui,sans-serif;max-width:520px;margin:15vh auto;padding:0 16px;color:#222}</style>
+</head>
+<body>
+<h1>Conectando…</h1>
+<p id="msg">Voltando para o painel no seu computador. Se nada acontecer, o painel precisa estar aberto neste mesmo computador (porta 4040).</p>
+<script>
+// Página de repasse: não guarda nada. Manda o código de login do TikTok para o painel local.
+// O destino é fixo (127.0.0.1:4040), então esta página não envia dados para nenhum outro lugar.
+window.location.replace("http://127.0.0.1:4040/oauth/tiktok/callback" + window.location.search);
+</script>
+</body>
+</html>
